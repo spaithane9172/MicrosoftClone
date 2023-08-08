@@ -44,7 +44,7 @@ function Nav() {
     
     return (
         <>
-            <nav className="flex justify-between items-center w-[100vw] border border-b-2 border-gray-100">
+            <nav id="navBar" className="flex justify-between items-center w-[100%] border border-b-2 border-gray-100">
                 <div className='flex'>
                     <div onClick={()=>{handleHamburgerClick(6)}} className="hamburger w-[50px] h-[50px] flex justify-center items-center flex-col">
                         <div className={`${hamburger} bg-black w-[20px] mb-[4px] h-[1px]`}></div>
@@ -58,13 +58,13 @@ function Nav() {
                 </div>
 
                 <div className='flex justify-center items-center ml'>
-                    <img src={img} className='w-28' alt="..." />
+                    <img src={img} className='w-24 sm:w-[6.5rem]' alt="..." />
                 </div>
-                <div className='flex justify-center items-center mr-4'>
-                    <img src={cartImg} className='w-3 h-3 mr-6' alt="..." />
-                    <img src={profilImg} className='w-8 h-8 ' alt="..." />
+                <div className='flex justify-center items-center pr-4'>
+                    <img src={cartImg} className='w-3 h-3 mr-6 sm:w-4 sm:h-4' alt="..." />
+                    <img src={profilImg} className='w-6 h-6 sm:w-8 sm:h-8' alt="..." />
                 </div>
-                <div id="dropDown" className={`absolute flex ${vdrop[6]?"block":"hidden"} justify-center top-[50px] w-[100vw] bg-[#f2f2f2]`}>
+                <div id="dropDown" className={`absolute flex ${vdrop[6]?"block":"hidden"} z-40 justify-center top-[50px] w-[100vw] bg-[#f2f2f2]`}>
                     <ul>
                         <li className="p-4 border border-1 border-gray w-[100vw]">Microsoft 365</li>
                         <li className="p-4 border border-1 border-gray w-[100vw]">Teams</li>

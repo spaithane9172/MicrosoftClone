@@ -1,11 +1,17 @@
-import Calculator from "./Calculator";
+import Carousel from "./component/Carousel/Carousel";
+import Courses from "./component/Courses";
+import Footer from "./component/Footer";
 import Nav from "./component/Nav";
+import Services from "./component/Services";
 
 function App() {
   return (
     <>
     <Nav />
-    <Calculator />
+    <Carousel />
+    <Services />
+    <Courses />
+    <Footer />
     </>
   );
 }
